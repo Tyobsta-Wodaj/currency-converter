@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Currency Converter</h1>
+          <hr>
+        <form>
+            <div class="inputs">
+                <p>Enter amount</p>
+                <input type="number" value="100" id="amount"> 
+            </div>
+
+            <div class="covertion">
+                <div class="from">
+                    <p>From</p>
+                    <div class="flag">
+                        <select id="from-section"></select>
+                    </div>
+                </div>
+
+                <div class="icon">
+                    <i class="fas fa-exchange-alt" id="exicon"></i>
+                </div>
+
+                <div class="to">
+                    <p>To</p>
+                    <div class="flag">
+                        <select id="to-section"></select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exchange-loading">Getting the exchange rate...</div>
+
+            <div id="get-exchange">
+                <button id="exchange-btn">Get Exchange Rate</button>
+            </div>
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
